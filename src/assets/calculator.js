@@ -5,7 +5,27 @@ class Calculator extends React.Component{
     super()
 
     this.state = {
-      numpad_array: [7, 8, 9, 'DEL', 4, 5, 6, '+', 1, 2, 3, '-', '.', 0, '/', 'x', 'RESET', 'equal'],
+      numpad_array: [
+        //set additional value attribute for different render and calculating value
+        {name:7, value:7}, 
+        {name:8, value:8}, 
+        {name:9, value:9}, 
+        {name:'DEL', value:'DEL'}, 
+        {name:4, value:4}, 
+        {name:5, value:5}, 
+        {name:6, value:6}, 
+        {name:'+', value:'+'}, 
+        {name:1, value:1}, 
+        {name:2, value:2}, 
+        {name:3, value:3}, 
+        {name:'-', value:'-'}, 
+        {name:'.', value:'.'}, 
+        {name:0, value:0}, 
+        {name:'/', value:'/'}, 
+        {name:'x', value:'x'}, 
+        {name:'RESET', value:'RESET'}, 
+        {name:'equal', value:'='}
+      ],
       display: [],
       calculate: []
 
@@ -70,8 +90,8 @@ class Calculator extends React.Component{
             <div className="numpad-container">
               <ul className="row">
                 {this.state.numpad_array.map(item => {
-                  return <li key={item.toString()}>
-                          <button id={item.toString()} onClick={this.handlechange}>{item}</button>
+                  return <li key={item.name.toString()}>
+                          <button id={item.name.toString()} onClick={this.handlechange}>{item.value}</button>
                         </li>
                 })}
               </ul>
