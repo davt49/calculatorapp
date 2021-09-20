@@ -1,0 +1,145 @@
+.style-b{
+  height: auto;
+  background-color: hsl(0, 0%, 90%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0 50px 0;
+.container{
+  width: 600px;
+  
+}
+
+.navbar{
+  display: grid;
+  grid-template-columns: 50px 50px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "a a a a a a a a a a a a b ";
+  color: hsl(60, 10%, 19%);
+  .apptitle{
+    grid-area: a;
+    justify-content: flex-start;
+    padding-right: 200px;
+    font-size: 50px;
+  };
+  .nav-toggle{
+    justify-content: flex-end;
+    display: grid;
+    grid-template-columns: 50px 50px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "a a b b"
+    "c c d d";
+    .theme{
+      grid-area: c;
+    }
+    .theme-num{
+      grid-area: b;
+      font-size: 20px;
+      .themeNumber{
+        display: inline;
+        padding: 0 10px;
+      }
+    }
+    .toggle-radio{
+      grid-area: d;
+      background-color: hsl(0, 5%, 81%);
+      border-radius: 20px;
+      
+    
+    }
+  }
+}
+
+label{
+  padding: 0 10px;
+}
+
+input[type='range']{
+  width: 85px;
+  height: 10px;
+  padding-top: 10px;
+}
+input[type='range']::-webkit-slider-thumb{
+  padding-top: 10px;
+  width: 10px;
+  height: 10px;
+}
+input[type='range']::-webkit-slider-runnable-track{
+  height: 18px;
+  background-color: hsl(0, 5%, 81%);
+  border-radius: 2px;
+}
+
+input:checked {
+  color: hsl(45, 7%, 89%);
+}
+
+.calculator-display{
+  text-align: center;
+  margin: 0;
+  padding: 30px 0 10px 0;
+  .number-display{
+  padding: 10px 100px 10px 100px;
+  background-color: hsl(0, 0%, 93%);
+  color: hsl(60, 10%, 19%);
+  font-size: 80px;
+  text-align: right;
+  border-radius: 20px;;
+  }
+}
+.numpad{
+  background-color: hsl(0, 5%, 81%);
+  border-radius: 20px;
+  padding: 10px 0;
+  
+  .numpad-container{
+
+   .row{
+     list-style: none;
+     text-align: center;
+     display: block;
+     li{
+       display: inline;
+       margin: 0 15px;
+       button{
+        width: 100px;
+        height: 80px;
+        text-align: center;
+        margin: 5px 0px;
+        border-radius: 20px;
+        font-size: 30px;
+        color: hsl(60, 10%, 19%);
+       }
+       
+     }
+     #del{
+          padding: 30px 30px;
+          background-color: hsl(185, 42%, 37%);
+          color: hsl(0, 0, 100%);
+      }
+     #RESET{
+        width: 240px;
+        height: 80px;
+        background-color: hsl(185, 42%, 37%);
+        color: hsl(0, 0, 100%);
+     }
+     #equal{
+        width: 240px;
+        height: 80px;
+       background-color: hsl(25, 98%, 40%);
+       color: hsl(0, 0, 100%);
+     }
+   }
+  
+  }
+    
+}
+
+
+
+
+
+
+}
