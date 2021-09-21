@@ -9,14 +9,12 @@ class App extends React.Component {
 
     this.state = {
       theme:'style-a',
-      value: 1,
-      // numpad_array: [7,8,9,'DEL',4,5,6,'+',1,2,3,'-','.',0,'/','x','RESET','equal']
+      value: 1
     }
   }
 
   handleToggle(key, value){
     this.setState({ [key] : value})
-    console.log(this.state.value)
     if (value == 1) {
       this.setState({ theme: 'style-a' })
     } else if (value == 2) {
