@@ -35,10 +35,10 @@ class App extends React.Component {
       <div className={this.state.theme} > 
           <div className="container">
             <div className="navbar">
-              <div className="apptitle">Calc</div>
+              <div className="apptitle">calc</div>
 
               <div className="nav-toggle">
-                <div className="theme">Theme</div>
+                <div className="theme">THEME</div>
                 <div className="theme-num">
                   <div className="themeNumber">1</div>
                   <div className="themeNumber">2</div>
