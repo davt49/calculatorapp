@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./images/calcproject.png)
+![](./images/calcproject.png) 
 
 ### Links
 
